@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<style>
+    #inputDeposit ,#inputWithdeaw{
+        width: 80%;
+    }
+</style>
+<body>
+   
+    <header>
+        <h1 class="text-center">Welcome to bank File </h1>
+        <div class="container   mt-5 p-5 text-white">
+            <div class="row">
+              <div class="col bg-danger m-3 p-5   rounded">
+                 <h5>Deposti</h5>
+                 <h1>$<span id="depositMony">00</span></h1>
+              </div>
+              <div class="col bg-info m-3 p-5   rounded">
+                <h5>Winhdraw</h5>
+                <h1>$<span id="winhdrawPresentMonye">00</span></h1>
+              </div>
+              <div class="col bg-warning m-3 p-5  rounded">
+                <h5>Balence</h5>
+                <h1>$<span id="totalBalence">1240</span></h1>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col bg-dark text-danger m-3 p-5  rounded">
+                <h5>Please Deposit</h5>
+                <input class="w-60" type="text" name="text" id="inputDeposit" placeholder="$ Amount You want to deposit">
+                <br><br>
+                <input class="rounded bg-info border-0 px-4 py-2 text-dark" type="submit" value="Deposit" id="submitDeposit">
+              </div>
+              <div class="col bg-success m-3 p-5   rounded">
+                <h5>Please Withdraw</h5>
+                <input class="w-60" type="text" name="text" id="inputWithdeaw" placeholder="$ Amount You want to Withdraw ">
+                <br><br>
+                <input class="rounded bg-info border-0 px-4 py-2 font-bold text-dark" type="submit" value="Withdraw" id="inputWithdeawMony">
+              </div>
+            </div>
+          </div>
+    </header>
+ 
+<script src="bapperBank.js"></script>
+<script src="js/winhdraw.js"></script>
+</body>
+</html>
